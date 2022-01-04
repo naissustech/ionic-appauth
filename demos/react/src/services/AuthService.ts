@@ -14,7 +14,7 @@ export class Auth  {
     const authService = new AuthService(new CapacitorBrowser(), new CapacitorSecureStorage(), new AxiosRequestor());
     authService.authConfig = {
       client_id: 'appauth',
-      server_host: 'https://localhost:5001',
+      server_host: 'https://localhost:5000',
       redirect_url: isPlatform('capacitor') ? 'com.appauth.demo://callback' : window.location.origin + '/authcallback',
       end_session_redirect_url: isPlatform('capacitor') ?  'com.appauth.demo://endSession' : window.location.origin + '/endsession',
       scopes: 'openid offline_access',

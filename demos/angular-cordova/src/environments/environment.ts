@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   auth_config: {
     client_id: 'appauth',
-    server_host: 'https://localhost:5001',
+    server_host: 'https://localhost:5000',
     redirect_url: 'appauth://callback',
     end_session_redirect_url: 'appauth://endsession',
     scopes: 'openid offline_access',
